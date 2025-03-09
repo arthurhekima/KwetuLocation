@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwetu Loca</title>
+    <!-- liaison entre le fichier css -->
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    
+</head>
+<body>
+   
+    <!-- entete -->
+    <header class="vh">
+        <nav>
+            <div id="logo">
+                <p>KWETU <span>LOCA</span></p>
+            </div>
+            <div class="navlink">
+                <ul class="liste">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="venteVoiture.html">Ventes Voitures</a></li>
+                            <li><a href="venteMaison.html">Ventes Maisons</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="Assets/img_logo/amb.jpg" alt="" width="60em" class="menuAmbr">
+            
+        </nav>
+    </header><br>
+
+    <div class="bloc1">
+        <h1><strong>KWETU <br> &nbsp;&nbsp;&nbsp;<span>LOCA</span></strong></h1> <br>
+        <br><br><br>
+       
+
+    </div>
+    <br>
+    <hr><h1 class="txtvhcl" >NOS VEHICULE</h1><hr><br>
+    
+        <div class="carousel-container">
+            <!-- Image principale du carrousel -->
+            <div class="main-image">
+                <img src="Assets/img_voiture_et_moto/7.jpg" alt="Image de voiture" id="main-image" >
+            </div>
+    
+            <!-- Flèches de navigation -->
+            <div class="nav-arrows">
+                <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+                <span class="next" onclick="changeImage(1)">&#10095;</span>
+            </div>
+    
+            <!-- Miniatures des images -->
+            <div class="thumbnails">
+              <img src="Assets/img_voiture_et_moto/77.jpg" alt="Thumbnail 1" class="thumbnail" onclick="updateMainImage('Assets/img_voiture_et_moto/77.jpg')">
+                <img src="Assets/img_voiture_et_moto/777.jpg" alt="Thumbnail 2" class="thumbnail" onclick="updateMainImage('Assets/img_voiture_et_moto/777.jpg')">
+                <img src="Assets/img_voiture_et_moto/7777.jpg" alt="Thumbnail 3" class="thumbnail" onclick="updateMainImage('Assets/img_voiture_et_moto/7777.jpg')">
+           
+            </div><br>
+            <div class="btn5">
+               <a href=""><button>Acheter</button></a> 
+                <a href=""><button>Reserver</button></a>
+                <a href="contactVoiture.html"><button>Contacter</button></a>
+            </div><br>
+            <div class="par">
+                <h1>SUBARU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>25&nbsp;000$</span></h1>
+                <p>Manuel&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;400&nbsp;km</p>
+            </div>
+    
+            <!-- Indicateur d'images -->
+            <div class="image-counter" id="image-counter">1 / 4</div>
+        </div><br><br>
+
+        <!-- ____________________________________________________________________________________________ -->
+
+        <!-- carrousel independant -->
+
+     <div class="carrouselFlexDisplay">
+        <div class="carousel1" id="carousel1">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/0.jpg" class="carousel-image1" alt="Image 1">
+                <img src="Assets/img_voiture_et_moto/00.jpg" class="carousel-image1" alt="Image 2">
+                <img src="Assets/img_voiture_et_moto/000.jpg" class="carousel-image1" alt="Image 3">
+                <img src="Assets/img_voiture_et_moto/0000.jpg" class="carousel-image1" alt="Image 4">
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel1')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel1')">❯</button>
+            <div class="par">
+                <h1>SUBARU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>25&nbsp;000$</span></h1>
+                <p>Manuel&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;400&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">38 👁</div>
+                    <div class="stat">19 🔗</div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="carousel1" id="carousel2">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/1.jpg" class="carousel-image1" alt="Image A">
+                <img src="Assets/img_voiture_et_moto/11.jpg" class="carousel-image1" alt="Image B">
+               
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel2')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel2')">❯</button>
+            <div class="par">
+                <h1>SUBARU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>25&nbsp;000$</span></h1>
+                <p>Manuel&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;400&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">87 👁</div>
+                    <div class="stat">19 🔗</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel1" id="carousel3">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/6.jpg" class="carousel-image1" alt="Image D">
+                <img src="Assets/img_voiture_et_moto/66.jpg" class="carousel-image1" alt="Image E">
+                <img src="Assets/img_voiture_et_moto/666.jpg" class="carousel-image1" alt="Image F">
+                <img src="Assets/img_voiture_et_moto/6666.jpg" class="carousel-image1" alt="Image G">
+               
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel3')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel3')">❯</button>
+            <div class="par">
+                <h1>SUBARU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>25&nbsp;000$</span></h1>
+                <p>Manuel&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;400&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">44 👁</div>
+                    <div class="stat">13 🔗</div>
+                </div>
+            </div>
+        </div>
+     </div>  <br><br> 
+   
+
+        
+
+        
+    
+     <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Kwetu Loca</h3>
+                <p>Location de maisons et vente de voitures</p>
+                <ul>
+                    <li><a href="tel:+243 995 631 906"><span>Téléphone</span> : +243 995 631 906</a></li>
+                    <li><a href="mailto:arthurmukiraniahekima@gmail.com"><span>Email</span> : arthurmukiraniahekima@gmail.com</a></li>
+                    <li><a href="https://www.google.com/maps?q=Kitulu"><span>Localisation Maps</span> : Butembo, Nord Kivu</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-center">
+                <h4>Nos Services</h4>
+                <ul>
+                    <li><a href="#rent">Location de Maisons</a></li>
+                    <li><a href="venteVoiture.html">Vente de Voitures</a></li>
+                    <li><a href="apropos.html">À propos de Kwetu Loca</a></li>
+                    <li><a href="equipe.html">Notre Equipe</a></li>
+                    <li><a href="venteMaison.html">Vente de Maison</a></li>
+                    
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                  
+                    <a href="https://wa.me/+243123456789" target="_blank"><img src="Assets/img_logo/whatsapp.png" alt="WhatsApp" title="watssap"></a>
+                    <a href="https://www.facebook.com/kwetuloca" target="_blank"><img src="Assets/img_logo/facebook (1).png" alt="Facebook" title="Facebook"></a>
+                    <a href="https://twitter.com/kwetuloca" target="_blank"><img src="Assets/img_logo/instagram (1).png" alt="instagram" title="instagram"></a>
+                    <a href="mailto:arthurmukiraniahekima@gmail.com" target="_blank"><img src="Assets/img_logo/gmail.png" alt="mail" title="Mail"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kwetu Loca. Tous droits réservés.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Ir Devopper full stack Arthur Hekima </p>
+        </div>
+    </footer>
+    
+     
+     
+     <script src="Assets/js/script.js"></script> 
+    <script src="Assets/js/script2.js"></script>
+   
+    
+</body>
+</html>

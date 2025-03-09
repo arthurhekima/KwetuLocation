@@ -1,3 +1,8 @@
+/* Barre de navigation */
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -43,11 +48,200 @@ nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     font-weight: bolder;
+    
 }
 #logo span{
     color: brown;
+    
+}
+/* bloc1 titre */
+.bloc1{
+    background-color: brown;
+    background-image: url("a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bloc1 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6em;
+    color: rgb(61, 156, 69);
+}
+.bloc1 span{
+    color: rgb(248, 246, 246);
+}
+.bloc1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: aliceblue;
+    text-align: justify;
+}
+.contFlex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contFlex img{
+    padding: 10px;
+    border-radius: 20px;
+}
+.contFlex img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.prqnous h2{
+    font-family:"Exo 2", cursive;
+    color: rgb(118, 187, 118);
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    
+}
+.prqnous p{
+    font-family: "Exo 2", cursive;
+    font-size: 1.3em;
+    margin: 30px;
+}
+.recentBlogContent{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.recentBlogContent span{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFD700;
+    font-weight: bolder;
+}
+.recentBlogContent h4,
+.recentBlogContent p,
+.recentBlogContent b{
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 0, 0);
+}
+.contenaire{
+    background-color: aqua;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    width: 90%;
+    
+}
+.contenaire h1{
+    text-align: center;
+    font-family: "Rakkas", cursive;
+    color: white;
+    align-items: center;
+    
+}
+.txtBottomImg{
+    display: flex;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 147, 36);
+    border-radius: 1.2em;
+    padding: 20px;
+}
+.btn3{
+    color:white;
+    background-color: rgb(158, 69, 69);
+    border-radius: 1.3em;
+    width: 100%;
+}
+.item{
+    display: none;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+}
+.item img:hover{
+    width: 700px;
+    
+}
+#defilement{
+    
+    flex-wrap: wrap;
+}
+.blcdef{
+    display: flex;
+    padding: 20px;
+}
+.txtBottomImgdef{
+    display: flex;
+    flex-wrap: nowrap;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(207, 147, 36);
+    width: 15em;
+    font-size: 1.5em;
+    
+    
+}
+.deftxtflex{
+    display: flex;
 }
 
+nav .menuAmbr{
+    padding: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+
+    nav{
+        padding: 0;
+    }
+    nav .menuAmbr{
+        display: block;
+    }
+    
+    .navlink{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255,0.2);
+        backdrop-filter: blur(7px);
+        width: 100%;height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-left: 100%;
+        transition: all 0.5s ease;
+    }
+    .navlink.mobileMenu{
+        margin-left: 0;
+    }
+    .navlink ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .navlink ul li{
+        margin: 25px 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        
+    }
+    nav .navlink ul li a{
+        color: rgb(117, 45, 45);
+    }
+
+    .contenaire{
+        background-color: #28a745;
+        width: 100%;
+        left: 0;
+    }
+    .item img{
+        width: 29em;
+    }
+    .item img:hover{
+        width: 25em;
+    }
+}
+
+/* _______________________read more_________________________________________________ */
 .container {
     width: 80%;
     margin: 20px auto;
@@ -85,46 +279,702 @@ nav ul li a{
     cursor: pointer;
     border-radius: 5px;
   }
-  .bloc{
-    
-    background-repeat: no-repeat;
+.bgImg{
+    background-image: url("accueil.jpg");
+    height: 100vh;
     background-size: cover;
-    background-color: #3fb2d4;
-}
-.bloc h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 6em;
-    color: rgb(61, 156, 69);
-}
-.bloc span{
-    color: rgb(248, 246, 246);
-}
-.bloc p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    color: aliceblue;
-    text-align: justify;
-}
-.contFlex{
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+}
+/* .bgImg:after{
+    position: absolute;
+    content: '';
+    top: 30%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0 ,0.7);
+    
+} */
+.content{
+    position: absolute;
+    top:25%;
+    left: 1%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    z-index: 100;
+    width: 420px;
+    
+    
+    padding: 60px 32px;
+    background: rgba(red, green, blue, 0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0, 0.75);
+
+}
+.content p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(red, green, blue, 0.94);
+    padding: 10px;
+}
+.field input{
+    height: 50%;
+    width: 100%;
+    /* background: transparent; */
+   /*  border: none;
+    outline: none; */
+    color: #222;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Footer */
+
+/* Footer container */
+footer {
+    background-color: #59a35f;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer left */
+.footer-left {
+    width: 40%;
+}
+
+.footer-left h3 {
+    font-size: 1.8em;
+    color: #FFD700;
+}
+
+.footer-left p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.footer-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-left ul span{
+    color: #FFD700;
+    font-weight: bolder;
+}
+
+.footer-left ul li {
+    margin: 10px 0;
+}
+
+.footer-left ul li a {
+  color: #fff;
+    text-decoration: none;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer center */
+.footer-center {
+    width: 30%;
+}
+
+.footer-center h4 {
+    font-size: 1.8em;
+    color: #FFD700;
+}
+
+.footer-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin: 10px 0;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-center ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer right */
+.footer-right {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-right h4 {
+    font-size: 1.8em;
+    color: #FFD700;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.create-button {
+    background-color: #8B0000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.my-events-button {
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* .search-bar {
+    display: flex;
+    background: white;
+    padding: 12px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+} */
+
+/* .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+}
+
+.search-button {
+    background-color: #8B0000;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: none;
+} */
+
+.event-card {
+    background: rgb(109, 136, 105);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     
 }
-.contFlex img{
-    padding: 10px;
-    border-radius: 20px;
+
+.event-image {
+   
+    position: relative;
+    height: 30.5em;
+   
 }
-.contFlex img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+
+.event-type {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #28a745;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
 }
-.prqnous h2{
-    font-family:"Exo 2", cursive;
-    color: rgb(118, 187, 118);
+
+.countdown {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #dc3545;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.event-details {
+    padding: 16px;
+}
+
+.event-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.event-organizer {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.event-info {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    color: #444;
+}
+
+.ticket-types {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.ticket {
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.standard { background: #cce5ff; }
+.semi-vip { background: #d4edda; }
+.vip { background: #fff3cd; }
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.buy-button {
+    background: #0066ff;
+    color: white;
+    padding: 12px 48px;
+    border-radius: 50px;
+    border: none;
+    flex: 1;
+}
+
+.stats {
+    display: flex;
+    gap: 12px;
+}
+
+.stat {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.recentBlogContent{
+    display: flex;
+}
+
+/* ______________________________________________________________________ */
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* Section Équipe */
+.team-section {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.team-section h2 {
     font-size: 2.5em;
+    color: #333;
+}
+
+.team-section p {
+    font-size: 1.2em;
+    color: #777;
+    margin: 20px 0;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background-color: rgb(93, 145, 101);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: rgb(245, 163, 10);
+}
+
+.team-member p {
+    font-size: 1em;
+    color: white;
+    margin: 10px 0;
+}
+
+.team-member .linkedin {
+    display: inline-block;
+    background-color: #0077b5;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.team-member .linkedin:hover {
+    background-color: #005f8e;
+}
+
+/* Bouton CTA */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Réponse responsive */
+@media (max-width: 768px) {
+    .team {grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        grid-template-columns: 1fr;
+    }
+}
+/* _______________________________________________________________________ */
+
+/* recrutement */
+
+.recrutement {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.recrutement h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.recrutement p {
+    font-size: 1.2em;
+    color: #777;
+    margin: 20px 0;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4c9756;
+}
+/* ____________________________________________________ */
+
+/* Conteneur principal du carousel */
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+    z-index: 100;
+}
+
+.txtvhcl{
+    color: #4CAF50;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Image principale du carrousel */
+.main-image img {
+    width: 80%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    
+    z-index: 1;
     
 }
-.prqnous p{
-    font-family: "Exo 2", cursive;
-    font-size: 1.3em;
+
+/* Thumbnails (petites images en bas) */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    position: relative;
 }
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+/* Flèches de navigation */
+.nav-arrows span {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+.par{
+    border: 1px solid black;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Compteur d'images */
+.image-counter {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    
+}
+
+.btn5 button{
+    background-color: #28a745;
+    width: 5.5em;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.15em;
+    border-radius: 10px;
+}
+.par{
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    
+    justify-content: center;
+}
+.par h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(204, 80, 80);
+}
+.par span{
+    color: #28a745;
+}
+.par p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+/* ______________________________________________________________ */
+
+
+.carousel1 {
+    position: relative;
+    max-width: 400px;
+    
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.carousel-images1 {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-image1 {
+    min-width: 100%;
+    height: 400px;
+    
+}
+.carousel-button1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.prev1 {
+    left: 10px;
+}
+.next1 {
+    right: 10px;
+}
+.carrouselFlexDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn6{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-around;
+   
+
+}
+.btn6 button{
+    background-color: rgb(123, 123, 197);
+    width: 6em;
+    height: 3em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+}
+
