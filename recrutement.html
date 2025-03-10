@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwetu Loca</title>
+    <!-- liaison entre le fichier css -->
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+<body>
+    <!-- entete -->
+    <header class="vh">
+        <nav>
+            <div id="logo">
+                <p>KWETU <span>LOCA</span></p>
+            </div>
+            <div class="navlink">
+                <ul class="liste">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="venteVoiture.html">Ventes Voitures</a></li>
+                            <li><a href="venteMaison.html">Ventes Maisons</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <img src="Assets/img_logo/amb.jpg" alt="" width="60em" class="menuAmbr">
+            
+        </nav>
+    </header><br>
+
+    <div class="bloc1">
+        <h1><strong>KWETU <br> &nbsp;&nbsp;&nbsp;<span>LOCA</span></strong></h1> <br>
+        <br><br><br><br>
+    </div>
+
+    <section class="recrutement">
+        <h2>Rejoindre notre équipe</h2>
+        <p>Nous recherchons des personnes passionnées pour rejoindre notre équipe ! Si tu veux faire partie de notre aventure, remplis le formulaire ci-dessous et nous reviendrons vers toi.</p>
+
+        <!-- Formulaire de recrutement -->
+      <form action="submit_form.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cv">Téléchargez votre CV :</label>
+            <input type="file" id="cv" name="cv" required>
+
+            <label for="motivation">Lettre de motivation :</label>
+            <textarea id="motivation" name="motivation" required rows="10"></textarea>
+
+            <button type="submit">Envoyer ma candidature</button>
+        </form>
+    </section> 
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Kwetu Loca</h3>
+                <p>Location de maisons et vente de voitures</p>
+                <ul>
+                    <li><a href="tel:+243 995 631 906"><span>Téléphone</span> : +243 995 631 906 </a></li>
+                    <li><a href="mailto:arthurmukiraniahekima@gmail.com"><span>Email</span> :arthurmukiraniahekima@gmail.com </a></li>
+                    <li><a href="https://www.google.com/maps?q=Kitulu"><span>Localisation Maps</span> : Kitulu, Kinshasa</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-center">
+                <h4>Nos Services</h4>
+                <ul>
+                    <li><a href="#rent">Location de Maisons</a></li>
+                    <li><a href="venteVoiture.html">Vente de Voitures</a></li>
+                    <li><a href="apropos.html">À propos de Kwetu Loca</a></li>
+                    <li><a href="equipe.html">Notre Equipe</a></li>
+                    <li><a href="venteMaison.html">Vente de Maison</a></li>
+                    <li><a href="venteMoto.html">Vente de Moto d'ocasion</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                  
+                    <a href="https://wa.me/+243123456789" target="_blank"><img src="Assets/img_logo/whatsapp.png" alt="WhatsApp" title="watssap"></a>
+                    <a href="https://www.facebook.com/kwetuloca" target="_blank"><img src="Assets/img_logo/facebook (1).png" alt="Facebook" title="Facebook"></a>
+                    <a href="https://instagram.com/kwetuloca" target="_blank"><img src="Assets/img_logo/instagram (1).png" alt="instagram" title="instagram"></a>
+                    <a href="mailto:arthurmukiraniahekima@gmail.com" target="_blank"><img src="Assets/img_logo/gmail.png" alt="mail" title="Mail"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kwetu Loca. Tous droits réservés.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Ir Devopper full stack Arthur Hekima </p>
+        </div>
+    </footer>
+    <script src="Assets/js/script.js"></script>
+</body>
+</html>
