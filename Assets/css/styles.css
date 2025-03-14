@@ -979,4 +979,6 @@ form button:hover {
     font-weight: bold;
     border: none;
 }
-
+.flexbloc{
+    display: flex;
+}
