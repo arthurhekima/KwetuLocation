@@ -36,6 +36,7 @@ nav ul li:hover ul{
 
 nav a:hover {
     color: brown;
+    text-decoration: underline;
 }
 nav ul li a{
     text-decoration: none;
@@ -56,18 +57,32 @@ nav ul li a{
 }
 /* bloc1 titre */
 .bloc1{
-    background-color: brown;
-    background-image: url("a.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(165,42,42,0.8);
+   
 }
 .bloc1 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 6em;
-    color: rgb(61, 156, 69);
+    color: rgb(48, 124, 73);
+    text-shadow: 1px 1px #e1e1e1,
+    2px 2px #e1e1e1,
+    3px 3px #e1e1e1,
+    4px 4px #e1e1e1,
+    5px 5px #e1e1e1,
+    6px 6px #e1e1e1,
+    20px 30px 0 rgba(0,0,0,0.1);
 }
 .bloc1 span{
-    color: rgb(248, 246, 246);
+    color: rgb(251, 253, 252);
+    text-shadow: 1px 1px #49b672,
+    2px 2px #e1e1e1,
+    3px 3px #e1e1e1,
+    4px 4px #e1e1e1,
+    5px 5px #e1e1e1,
+    6px 6px #e1e1e1,
+    20px 30px 0 rgba(0,0,0,0.1);
 }
 .bloc1 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -224,6 +239,10 @@ nav .menuAmbr{
         font-weight: bold;
         
     }
+    nav .navlink ul li :hover{
+        text-decoration: underline;
+        
+    }
     nav .navlink ul li a{
         color: rgb(26, 11, 240);
         font-weight: bolder;
@@ -241,6 +260,17 @@ nav .menuAmbr{
     .item img:hover{
         width: 25em;
     }
+    .bloc1{
+        background-color: #78b0ec;
+    }
+    .bloc1 h1{
+        font-size: 3em;
+    }
+    .logo_accueil img{
+        display: none;
+    }
+    
+    
 }
 
 /* _______________________read more_________________________________________________ */
@@ -250,26 +280,42 @@ nav .menuAmbr{
     border: 1px solid #ccc;
     padding: 11px;
   }
-  .container .visible-content h1{
+  .container2{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 11px;
+    background-color: #28a745;
+  }
+  .container2 .visible-content h1{
     color: brown;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  .container .visible-content {
+  .container2 .visible-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     text-align: justify;
+    color: white;
 
   }
-
+  
   
 
   .hidden-content {
     display: none; /* Initially hidden */
   }
+  .container2 .hidden-content{
+    color: white;
+  }
+  .container2 .hidden-content h1{
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+  }
 
   .read-more-btn {
-    background-color: #4CAF50; /* Green */
+    background-color: brown;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -281,41 +327,45 @@ nav .menuAmbr{
     cursor: pointer;
     border-radius: 5px;
   }
-.bgImg{
-    background-image: url("accueil.jpg");
-    height: 100vh;
+  /* ------------------------------------------------------------------- */
+
+  /* css pour contact  */
+  .bgImg{
+   
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    justify-content: center;
 }
-/* .bgImg:after{
+.bgImg:hover{
     position: absolute;
     content: '';
-    top: 30%;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0 ,0.7);
+    background-repeat: repeat;
     
-} */
+} 
 .content{
-    position: absolute;
-    top:25%;
-    left: 1%;
+    position: relative;
+    top:5%;
+    left: 50px;
     transform: translate(-50% -50%);
     text-align: center;
-    z-index: 100;
+    z-index: 1;
     width: 420px;
-    
-    
+    justify-content: center;
     padding: 60px 32px;
     background: rgba(red, green, blue, 0.04);
-    box-shadow: -1px 4px 28px 0px rgba(0,0,0, 0.75);
+    box-shadow: -1px 4px 20px 0px rgba(0,0,0, 0.75);
 
 }
 .content p{
-    color: white;
+    color: rgb(96, 201, 101);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -323,7 +373,7 @@ nav .menuAmbr{
 }
 .field{
     position: relative;
-    height: 45px;
+    
     width: 100%;
     display: flex;
     background: rgba(red, green, blue, 0.94);
@@ -332,142 +382,12 @@ nav .menuAmbr{
 .field input{
     height: 50%;
     width: 100%;
-    /* background: transparent; */
-   /*  border: none;
-    outline: none; */
     color: #222;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     
 }
-
-/* Footer */
-
-/* Footer container */
-footer {
-    background-color: #59a35f;
-    color: #fff;
-    padding: 40px 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Footer layout */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Footer left */
-.footer-left {
-    width: 40%;
-}
-
-.footer-left h3 {
-    font-size: 1.8em;
-    color: #FFD700;
-}
-
-.footer-left p {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.footer-left ul {
-    list-style-type: none;
-    padding: 0;
-}
-.footer-left ul span{
-    color: #FFD700;
-    font-weight: bolder;
-}
-
-.footer-left ul li {
-    margin: 10px 0;
-}
-
-.footer-left ul li a {
-  color: #fff;
-    text-decoration: none;
-}
-
-.footer-left ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer center */
-.footer-center {
-    width: 30%;
-}
-
-.footer-center h4 {
-    font-size: 1.8em;
-    color: #FFD700;
-}
-
-.footer-center ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-center ul li {
-    margin: 10px 0;
-}
-
-.footer-center ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-center ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer right */
-.footer-right {
-    width: 30%;
-    text-align: center;
-}
-
-.footer-right h4 {
-    font-size: 1.8em;
-    color: #FFD700;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.social-links a {
-    margin: 0 15px;
-}
-
-.social-links img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Footer bottom */
-.footer-bottom {
-    background-color: #111;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    bottom: 40px;
-    
-}
-
-.footer-bottom p {
-    font-size: 14px;
-    color: #aaa;
-}
-
+/* -------------------------------------------------------------- */
 
 
 
@@ -892,7 +812,7 @@ form button:hover {
 
 .btn5 button{
     background-color: #28a745;
-    width: 5.5em;
+    width: 18.5em;
     height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -919,6 +839,7 @@ form button:hover {
 }
 /* ______________________________________________________________ */
 
+/* carreousol independant */
 
 .carousel1 {
     position: relative;
@@ -936,8 +857,12 @@ form button:hover {
 }
 .carousel-image1 {
     min-width: 100%;
-    height: 400px;
+    height: 300px;
+   
     
+}
+.carousel-images1 :hover{
+width: 500px;
 }
 .carousel-button1 {
     position: absolute;
@@ -982,3 +907,209 @@ form button:hover {
 .flexbloc{
     display: flex;
 }
+
+
+
+
+/* Footer */
+
+/* Footer container */
+footer {
+    background-color: #59a35f;
+    color: #fff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer left */
+.footer-left {
+    width: 40%;
+}
+
+.footer-left h3, h4 {
+    font-size: 1.5em;
+    color: brown;
+}
+.titlefoot{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+.footer-left p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: brown;
+}
+
+.footer-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-left ul span{
+    color: brown;
+    font-weight: bolder;
+}
+
+.footer-left ul li {
+    margin: 10px 0;
+}
+
+.footer-left ul li a {
+  color: #fff;
+    text-decoration: none;
+}
+
+.footer-left ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.7em;
+}
+
+/* Footer center */
+.footer-center {
+    width: 40%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.footer-center h4 {
+    font-size: 1.5em;
+    color: brown;
+    display:flex ;
+    justify-content: center;
+}
+.footer-center .p{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-center ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.footer-center ul li {
+    margin: 10px 0;
+}
+
+.footer-center ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-center ul li a:hover {
+    text-decoration: underline;
+    font-size: 1.7em;
+}
+
+/* Footer right */
+.footer-right {
+    width: 20%;
+    text-align: center;
+}
+
+.footer-right h4 {
+    font-size: 1.5em;
+    color: brown;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.social-links a {
+    margin: 0 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+    
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
+/* --------------------------------------- */
+
+.aproposbloc{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container {
+    background-color: #28a745;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+.tittreAprp{
+    background-color: #28a745;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.bt{
+    display: flex;
+    justify-content: center;
+   
+}
+.bt button{
+    background-color: brown;
+    color: white;
+    border: none;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 1.3em;
+}
+.contact-button{
+    font-size: 1.2em;
+}
+
+
+
+
+

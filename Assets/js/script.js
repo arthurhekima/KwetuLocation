@@ -1,4 +1,20 @@
  
+setInterval(updateActiveElt,3000);
+
+let elements=document.getElementsByClassName('item');
+let activeElement=0;
+
+function updateActiveElt(){
+    elements[activeElement].classList.remove('active');
+    activeElement++;
+    if(activeElement >= elements.length){
+        activeElement=0;
+    }
+    elements[activeElement].classList.add('active')
+
+}
+
+
 /* menu hambourger */
 const menuHamburger = document.querySelector(".menuAmbr")
 const navlinks = document.querySelector(".navlink")
@@ -40,7 +56,7 @@ function updateImageCounter() {
 updateImageCounter();
 
  
- 
+
  
 
 

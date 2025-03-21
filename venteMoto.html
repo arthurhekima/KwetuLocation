@@ -6,8 +6,10 @@
     <title>Kwetu Loca</title>
     <!-- liaison entre le fichier css -->
     <link rel="stylesheet" href="Assets/css/styles.css">
+    
 </head>
 <body>
+   
     <!-- entete -->
     <header class="vh">
         <nav>
@@ -61,32 +63,87 @@
        
 
     </div>
-
-    <section class="recrutement">
-        <h2>Rejoindre notre équipe</h2>
-        <p>Nous recherchons des personnes passionnées pour rejoindre notre équipe ! Si tu veux faire partie de notre aventure, remplis le formulaire ci-dessous et nous reviendrons vers toi.</p>
-
-        <!-- Formulaire de recrutement -->
-      <form action="submit_form.php" method="POST">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="cv">Téléchargez votre CV :</label>
-            <input type="file" id="cv" name="cv" required>
-
-            <label for="motivation">Lettre de motivation :</label>
-            <textarea id="motivation" name="motivation" required rows="10"></textarea>
-
-            <button type="submit">Envoyer ma candidature</button>
-        </form>
-    </section> 
-    <hr>
     <br>
+    <hr><h1 class="txtvhcl" >NOS MOTO D'OCASION</h1><hr><br>
+    
 
-    <footer>
+        <!-- ____________________________________________________________________________________________ -->
+
+        <!-- carrousel independant -->
+
+     <div class="carrouselFlexDisplay">
+        <div class="carousel1" id="carousel1">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/f.jpg" class="carousel-image1" alt="Image 1">
+                <img src="Assets/img_voiture_et_moto/ff.jpg" class="carousel-image1" alt="Image 2">
+                <img src="Assets/img_voiture_et_moto/fff.jpg" class="carousel-image1" alt="Image 3">
+              
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel1')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel1')">❯</button>
+            <div class="par">
+                <h1>DK &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>1&nbsp;200$</span></h1>
+                <p>&nbsp;Bleu&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;300&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">38 👁</div>
+                    <div class="stat">19 🔗</div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="carousel1" id="carousel2">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/g.jpg" class="carousel-image1" alt="Image A">
+                <img src="Assets/img_voiture_et_moto/g.jpg" class="carousel-image1" alt="Image B">
+               
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel2')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel2')">❯</button>
+            <div class="par">
+                <h1>D TRAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>2&nbsp;000$</span></h1>
+                <p>Blanc&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;200&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">87 👁</div>
+                    <div class="stat">19 🔗</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel1" id="carousel3">
+            <div class="carousel-images1">
+                <img src="Assets/img_voiture_et_moto/h.jpg" class="carousel-image1" alt="Image D">
+                <img src="Assets/img_voiture_et_moto/hh.jpg" class="carousel-image1" alt="Image E">
+               
+            </div>
+            <button class="carousel-button1 prev1" onclick="moveSlide(-1, 'carousel3')">❮</button>
+            <button class="carousel-button1 next1" onclick="moveSlide(1, 'carousel3')">❯</button>
+            <div class="par">
+                <h1>DK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>1&nbsp;300$</span></h1>
+                <p>Vert&nbsp;&nbsp;|&nbsp;&nbsp;Essence&nbsp;&nbsp;|&nbsp;&nbsp;400&nbsp;km</p>
+            </div>
+            <div class="actions">
+                <a href="contactlocal.html"><button class="buy-button">interessé</button></a>
+                <div class="stats">
+                    <div class="stat">44 👁</div>
+                    <div class="stat">13 🔗</div>
+                </div>
+            </div>
+        </div>
+     </div>  <br><br> 
+   
+
+     <hr>
+     <br>
+
+        
+    
+     <footer>
         <div class="titlefoot">
             <h3>Kwetu Loca </h3>
             <p></p>
@@ -132,6 +189,11 @@
             <p>&copy; 2025 Kwetu Loca. Tous droits réservés.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By Ir Devopper full stack Arthur Hekima </p>
         </div>
     </footer>
-    <script src="Assets/js/script.js"></script>
+     
+     
+     <script src="Assets/js/script.js"></script> 
+    <script src="Assets/js/script2.js"></script>
+   
+    
 </body>
 </html>
